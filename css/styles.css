@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.85rem 5.5rem;
+}
+
+header {
+  align-self: flex-start;
+}
+
+.header .logo {
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 539px;
+  height: auto
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Space Mono", sans-serif;
+  width: 586px;
+  margin-left: 8.78rem;
+}
+
+.title {
+  font-family: "Space Mono", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+}
+
+.content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  max-width: 381px;
+  padding: 2.25rem 0 4.57rem 0;
+  color: gray;
+}
+
+.button-homepage {
+  width: max-content;
+  padding: 1.6em 3em;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #333333;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button-homepage :hover{
+  background-color: gray;
+}
+
+.dev-challenge-user {
+  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  color: #BDBDBD;
+}
+.dev-challenge-user:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width:1280px) {
+  .container{
+    transform: scale(0.7);
+  }
+}
+@media screen and (max-width:800px) {
+  body{
+    padding: 1.42rem 1.71rem;
+  }
+  .container{
+
+    transform: scale(1);
+    flex-direction: column;
+  }
+  .image{
+    margin: 4.57rem 0 4.2 0;
+  }
+  .image img{
+    width: 286px;
+  }
+  .container{
+    margin-bottom: 6.85rem;
+  }
+  .main{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .title{
+    line-height: 71px;
+    font-size: 48px;
+
+  }
+  .content{
+    font-size: 18px;
+    line-height: 27px;
+    padding: 2rem 4.78rem 0;
+  }
+}
